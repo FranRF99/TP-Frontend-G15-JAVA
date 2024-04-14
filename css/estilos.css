@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+:root {
+    --negro: #000000;
+    --rojo: #CF0A0A;
+    --naranja:  #DC5F00;
+    --gris : #EEEEEE;
+}
+
+.header{
+    background-color: var(--rojo);
+}
+
+section{
+    background-color: var(--gris);
+}
+
+/* ----- Logo -----*/
+#logo{
+    position: relative;
+    left: 1.8vw; 
+    top: 1.8vh;
+    width: 7vw;
+    height: auto;
+    cursor: pointer;
+    float: left;
+    border: 2px var(--negro) solid;
+    border-radius: 15px;
+    filter: contrast(175%) brightness(150%);
+}
+
+#logo:hover{
+    filter: contrast(95%) brightness(95%);
+}
+
+/*----- Menu -----*/
+nav ul{
+    height: 11vh;
+    padding: 4vh 4vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.menu_nav{
+    background-color: var(--negro);
+    color: var(--gris);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+.menu_nav:hover{
+    background-color: var(--gris);
+    color: var(--negro);
+    cursor: pointer;
+    border: 2px var(--negro) solid;
+}
+
+/*----- Footer -----*/
+.footer{
+    width: 100%;
+    background-color: var(--rojo);
+    color: var(--gris);
+    text-align: center;
+}
+
+#footer_direccion{
+    float: left;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    text-align: left;
+    color: var(--gris);
+}
+
+#footer_direccion img{
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 0.6vw;
+    cursor: pointer;
+}
+
+#footer_direccion img:hover{
+    filter: contrast(85%) brightness(85%);
+}
+
+.footer_redes{
+    width: 2.2vw;
+    cursor: pointer;
+}
+
+.footer_redes:hover{
+    background-color: var(--gris);
+}
+
+.footer_p{
+    font-size: 0.8rem;
+    color: var(--gris);
+}
+
+/*----- Acerca -----*/
+#grupo15{
+    width: 12vw;
+    margin-left: 20vw;
+    border: 2px var(--rojo) solid;
+    text-align: center;
+    padding: 1%;
+}
+#grupo15 ul{
+    list-style-type: none;
+}
